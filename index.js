@@ -69,7 +69,7 @@ const symbolLimit = 16;
 const arrResult = [];
 const startEndLine = "*".repeat(symbolLimit + 2);
 
-const renderMessage = function (arr, instructions, symbolLimit) {
+const renderMessage = function (arr, instructions, symbolLimit = 16) {
   for (let index = 0; index < instruction.length; index++) {
     const format = instruction[index] === "LEFT";
     const result = textArr[index].join(" ");
